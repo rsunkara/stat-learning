@@ -11,7 +11,7 @@ summary(college)
 # ii.
 pairs(college[,1:10])
 # iii.
-plot(college$Private, college$Outstate)
+boxplot(college$Outstate~ college$Private)
 # iv.
 Elite = rep("No", nrow(college))
 Elite[college$Top10perc>50] = "Yes"
